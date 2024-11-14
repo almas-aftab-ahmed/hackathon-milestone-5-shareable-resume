@@ -75,7 +75,9 @@ button :hover {
     border: 2px solid skyblue;
     border-radius: 8px;
     background-color: rgb(228, 242, 255);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5)
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    /*makes resume editable*/
+    outline: none;
 }   
    
  h2 {

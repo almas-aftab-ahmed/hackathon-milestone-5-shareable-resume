@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Resume Builder</title>
+    <title>Shareable Resume Builder</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Dynamic Resume Builder</h1>
+    <h1>Shareable Resume Builder</h1>
     <form id="resume-form">
         <fieldset>
             <legend>personal information</legend>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="enter your username" required>
+
             <label for="name">Name:</label>
             <input type="text" id="name" placeholder="enter your name" required>
             <label for="email">Email:</label>
@@ -40,7 +44,17 @@
 
     </form>
     <br>
-    <div id="resume-display">
+    <div id="resume-display" contenteditable="true">
+    </div>
+
+    <br>
+    <!--seaction for the shareable link and download option-->
+    <div id="shareable-link-container" style="display: none;">
+        <h2>Shareable Link</h2>
+        <p>here is your unique link to view or edit your resume:</p>
+        <a href="#" id="shareable-link" target="_blank"></a>
+        <br>
+        <button id="download-pdf"><b>download as PDF</b></button>
     </div>
     <script src="main.js"></script>
 </body>
